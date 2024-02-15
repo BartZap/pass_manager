@@ -8,6 +8,7 @@
 #include <fstream>
 #include <vector>
 #include <random>
+//#include <conio.h>
 
 class Manager{
 private:
@@ -22,6 +23,7 @@ public:
     Manager();
     ~Manager();
     std::string get_login();
+    std::string cipher(std::string& , size_t, bool);
     void start_screen();
     void create_account();
     void check_login();
@@ -31,5 +33,6 @@ public:
     void private_account();
     void generate_pass();
     void show_my_info();
+    void delete_pass();
 };
 #endif
